@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="600" viewBox="0 0 800 600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Styles -->  
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f7fa" />
+      <stop offset="100%" stop-color="#e4e8f0" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    <linearGradient id="moduleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a7bd5" />
+      <stop offset="100%" stop-color="#3a6073" />
+    </linearGradient>
+    <linearGradient id="inputGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9966" />
+      <stop offset="100%" stop-color="#ff5e62" />
+    </linearGradient>
+    <linearGradient id="outputGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#56ab2f" />
+      <stop offset="100%" stop-color="#a8e063" />
+    </linearGradient>
+    <linearGradient id="processingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4568dc" />
+      <stop offset="100%" stop-color="#b06ab3" />
+    </linearGradient>
+    <linearGradient id="neuralGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3494e6" />
+      <stop offset="100%" stop-color="#ec6ead" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+  </defs>
+  
+  <!-- Main Background -->
+  <rect width="100%" height="100%" fill="url(#backgroundGradient)" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">GridShapeAI Architecture</text>
+  
+  <!-- Input Layer -->
+  <rect x="300" y="70" width="200" height="60" fill="url(#inputGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="400" y="105" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Text Prompt Input</text>
+  
+  <!-- Architecture Components -->
+  <!-- Text Processing Module -->
+  <rect x="100" y="170" width="180" height="80" fill="url(#processingGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="190" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Text Processing</text>
+  <text x="190" y="230" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">NLP & Parameter Extraction</text>
+  
+  <!-- Encoder Module -->
+  <rect x="310" y="170" width="180" height="80" fill="url(#neuralGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="400" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Text Encoder</text>
+  <text x="400" y="230" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Neural Network (Transformer)</text>
+  
+  <!-- Grid Manager Module -->
+  <rect x="520" y="170" width="180" height="80" fill="url(#moduleGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="610" y="205" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Grid Manager</text>
+  <text x="610" y="230" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">3D Grid Initialization</text>
+  
+  <!-- Core Processing Layer -->
+  <!-- Shape Generator -->
+  <rect x="100" y="300" width="180" height="80" fill="url(#moduleGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="190" y="335" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Shape Generator</text>
+  <text x="190" y="360" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Geometric Algorithms</text>
+  
+  <!-- Grid Decoder -->
+  <rect x="310" y="300" width="180" height="80" fill="url(#neuralGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="400" y="335" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Grid Decoder</text>
+  <text x="400" y="360" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Neural Network (MLP)</text>
+  
+  <!-- Boolean Operations -->
+  <rect x="520" y="300" width="180" height="80" fill="url(#moduleGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="610" y="335" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Boolean Operations</text>
+  <text x="610" y="360" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Union, Intersection, Difference</text>
+  
+  <!-- Output Layer -->
+  <!-- Renderer -->
+  <rect x="100" y="430" width="180" height="80" fill="url(#outputGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="190" y="465" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Renderer</text>
+  <text x="190" y="490" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">2D/3D Visualization</text>
+  
+  <!-- Reverse Mapper -->
+  <rect x="310" y="430" width="180" height="80" fill="url(#moduleGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="400" y="465" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Reverse Mapper</text>
+  <text x="400" y="490" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Mesh, UV, Point Cloud</text>
+  
+  <!-- Export Module -->
+  <rect x="520" y="430" width="180" height="80" fill="url(#outputGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="610" y="465" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Export Module</text>
+  <text x="610" y="490" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">OBJ, STL, PNG, SVG</text>
+  
+  <!-- Output Result -->
+  <rect x="310" y="530" width="180" height="50" fill="url(#outputGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="400" y="560" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Result Output</text>
+  
+  <!-- Connection Arrows -->
+  <!-- Input to First Layer -->
+  <path d="M400 130 L400 165" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Input layer to components -->
+  <path d="M390 130 L190 165" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M410 130 L610 165" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- First layer to second layer -->
+  <path d="M190 250 L190 295" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M400 250 L400 295" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M610 250 L610 295" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Cross-connections between first layer components -->
+  <path d="M280 210 L310 210" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M490 210 L520 210" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Cross-connections between second layer components -->
+  <path d="M280 340 L310 340" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M490 340 L520 340" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Second layer to output layer -->
+  <path d="M190 380 L190 425" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M400 380 L400 425" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M610 380 L610 425" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Cross-connections between output layer components -->
+  <path d="M280 470 L310 470" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M490 470 L520 470" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Output layer to result -->
+  <path d="M190 510 L310 530" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M400 510 L400 525" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M610 510 L490 530" stroke="#2c3e50" stroke-width="2" fill="none" marker-end="url(#arrowhead)" />
+</svg>

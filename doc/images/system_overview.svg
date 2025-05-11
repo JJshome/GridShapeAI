@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->  
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f7fa" />
+      <stop offset="100%" stop-color="#e4e8f0" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    <linearGradient id="processGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a7bd5" />
+      <stop offset="100%" stop-color="#3a6073" />
+    </linearGradient>
+    <linearGradient id="gridGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4568dc" />
+      <stop offset="100%" stop-color="#b06ab3" />
+    </linearGradient>
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9966" />
+      <stop offset="100%" stop-color="#ff5e62" />
+    </linearGradient>
+    <linearGradient id="outputGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#56ab2f" />
+      <stop offset="100%" stop-color="#a8e063" />
+    </linearGradient>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#2c3e50" />
+    </marker>
+  </defs>
+  
+  <!-- Main Background -->
+  <rect width="100%" height="100%" fill="url(#backgroundGradient)" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">GridShapeAI System Overview</text>
+  
+  <!-- Input Section -->
+  <rect x="50" y="70" width="200" height="100" fill="url(#textGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="150" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Text Prompt Input</text>
+  <text x="150" y="140" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">"100x100 grid, draw a square 
+at (30,30) to (70,70)"</text>
+  
+  <!-- Processing Flow Arrows -->
+  <path d="M250 120 L300 120" stroke="#2c3e50" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M500 120 L550 120" stroke="#2c3e50" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M750 120 L770 120 L770 180 L50 180 L50 220 L100 220" stroke="#2c3e50" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M300 220 L350 220" stroke="#2c3e50" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  <path d="M550 220 L600 220" stroke="#2c3e50" stroke-width="3" fill="none" marker-end="url(#arrowhead)" />
+  
+  <!-- Text Analysis Module -->
+  <rect x="300" y="70" width="200" height="100" fill="url(#processGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="400" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Text Analysis</text>
+  <text x="400" y="135" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Extract shape parameters</text>
+  <text x="400" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">and grid specifications</text>
+  
+  <!-- 3D Grid Module -->
+  <rect x="550" y="70" width="200" height="100" fill="url(#gridGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="650" y="110" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">3D Grid Mapping</text>
+  <text x="650" y="135" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Place shape in 3D grid</text>
+  <text x="650" y="155" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">using coordinate system</text>
+  
+  <!-- Grid -->  
+  <g transform="translate(50, 220)">
+    <rect x="0" y="0" width="250" height="150" fill="white" rx="10" ry="10" filter="url(#shadow)" />
+    <text x="125" y="25" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#2c3e50">3D Grid Structure</text>
+    
+    <!-- Grid Points Animation -->
+    <g>
+      <!-- Animated grid points would be here in full animation -->
+      <rect x="50" y="50" width="150" height="80" fill="#f0f0f0" stroke="#aaa" stroke-width="1" />
+      
+      <!-- Grid lines -->
+      <line x1="50" y1="60" x2="200" y2="60" stroke="#ccc" stroke-width="1" />
+      <line x1="50" y1="70" x2="200" y2="70" stroke="#ccc" stroke-width="1" />
+      <line x1="50" y1="80" x2="200" y2="80" stroke="#ccc" stroke-width="1" />
+      <line x1="50" y1="90" x2="200" y2="90" stroke="#ccc" stroke-width="1" />
+      <line x1="50" y1="100" x2="200" y2="100" stroke="#ccc" stroke-width="1" />
+      <line x1="50" y1="110" x2="200" y2="110" stroke="#ccc" stroke-width="1" />
+      <line x1="50" y1="120" x2="200" y2="120" stroke="#ccc" stroke-width="1" />
+      
+      <line x1="60" y1="50" x2="60" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="70" y1="50" x2="70" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="80" y1="50" x2="80" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="90" y1="50" x2="90" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="100" y1="50" x2="100" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="110" y1="50" x2="110" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="120" y1="50" x2="120" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="130" y1="50" x2="130" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="140" y1="50" x2="140" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="150" y1="50" x2="150" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="160" y1="50" x2="160" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="170" y1="50" x2="170" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="180" y1="50" x2="180" y2="130" stroke="#ccc" stroke-width="1" />
+      <line x1="190" y1="50" x2="190" y2="130" stroke="#ccc" stroke-width="1" />
+      
+      <!-- Highlight Square -->
+      <rect x="80" y="70" width="40" height="40" fill="rgba(58, 123, 213, 0.5)" stroke="#3a7bd5" stroke-width="2" />
+      
+      <!-- Coordinate Markers -->
+      <circle cx="80" cy="70" r="3" fill="red" />
+      <text x="75" y="65" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#333">(30,30)</text>
+      
+      <circle cx="120" cy="70" r="3" fill="red" />
+      <text x="125" y="65" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#333">(70,30)</text>
+      
+      <circle cx="120" cy="110" r="3" fill="red" />
+      <text x="125" y="115" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#333">(70,70)</text>
+      
+      <circle cx="80" cy="110" r="3" fill="red" />
+      <text x="75" y="115" font-family="Arial, sans-serif" font-size="8" text-anchor="middle" fill="#333">(30,70)</text>
+    </g>
+  </g>
+  
+  <!-- Shape Generation -->
+  <rect x="350" y="170" width="200" height="150" fill="url(#processGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="450" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Shape Generation</text>
+  <text x="450" y="235" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Apply geometric algorithms</text>
+  <text x="450" y="255" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">to create precise shapes</text>
+  <text x="450" y="275" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">on the grid</text>
+  
+  <!-- Output/Visualization -->
+  <rect x="600" y="170" width="150" height="150" fill="url(#outputGradient)" rx="10" ry="10" filter="url(#shadow)" />
+  <text x="675" y="210" font-family="Arial, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="white">Visualization</text>
+  <text x="675" y="235" font-family="Arial, sans-serif" font-size="12" text-anchor="middle" fill="white">Render as 2D/3D output</text>
+  
+  <!-- Output Shape -->
+  <rect x="625" y="250" width="100" height="60" fill="white" stroke="#2c3e50" stroke-width="1" />
+  <rect x="645" y="260" width="60" height="40" fill="#3a7bd5" stroke="#2c3e50" stroke-width="1" />
+  
+  <!-- Animation Elements -->
+  <g opacity="0.7">
+    <circle cx="150" cy="320" r="5" fill="#ff5e62">
+      <animate attributeName="cy" from="320" to="280" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="170" cy="330" r="5" fill="#ff5e62">
+      <animate attributeName="cy" from="330" to="290" dur="2s" begin="0.2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="190" cy="340" r="5" fill="#ff5e62">
+      <animate attributeName="cy" from="340" to="300" dur="2s" begin="0.4s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="400" cy="350" r="5" fill="#3a7bd5">
+      <animate attributeName="r" values="5;8;5" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="420" cy="350" r="5" fill="#3a7bd5">
+      <animate attributeName="r" values="5;8;5" dur="2s" begin="0.3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="440" cy="350" r="5" fill="#3a7bd5">
+      <animate attributeName="r" values="5;8;5" dur="2s" begin="0.6s" repeatCount="indefinite" />
+    </circle>
+    
+    <circle cx="650" cy="340" r="5" fill="#56ab2f">
+      <animate attributeName="cx" values="650;670;650" dur="2s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="650" cy="360" r="5" fill="#56ab2f">
+      <animate attributeName="cx" values="650;670;650" dur="2s" begin="0.3s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="650" cy="380" r="5" fill="#56ab2f">
+      <animate attributeName="cx" values="650;670;650" dur="2s" begin="0.6s" repeatCount="indefinite" />
+    </circle>
+  </g>
+  
+  <!-- System Label -->
+  <text x="400" y="380" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="#2c3e50">GridShapeAI Framework</text>
+</svg>
