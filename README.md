@@ -78,4 +78,13 @@ The system is implemented using:
 
 For detailed technical information, see the [src directory](src/README.md).
 
+## Core Components
+
+- **[Grid Module](src/grid)**: 3D grid representation and operations
+- **[Model Module](src/model)**: Neural network implementation for text-to-grid generation
+- **[Shape Generator](src/shape_generator)**: Core algorithms for geometric shape creation
+- **[Renderer](src/renderer)**: Visualization of generated shapes in 2D and 3D
+- **[Reverse Mapper](src/reverse_mapper)**: Conversion to meshes, point clouds, and UV maps
+- **[Utilities](src/utils)**: Helper functions and text processing
+
 Patent Pending
