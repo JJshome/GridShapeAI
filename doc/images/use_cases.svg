@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800" height="400" viewBox="0 0 800 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background and Styles -->  
+  <defs>
+    <linearGradient id="backgroundGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f5f7fa" />
+      <stop offset="100%" stop-color="#e4e8f0" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="3" flood-opacity="0.3" />
+    </filter>
+    <linearGradient id="cadGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a7bd5" />
+      <stop offset="100%" stop-color="#3a6073" />
+    </linearGradient>
+    <linearGradient id="architectureGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#834d9b" />
+      <stop offset="100%" stop-color="#d04ed6" />
+    </linearGradient>
+    <linearGradient id="educationGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9966" />
+      <stop offset="100%" stop-color="#ff5e62" />
+    </linearGradient>
+    <linearGradient id="printingGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#56ab2f" />
+      <stop offset="100%" stop-color="#a8e063" />
+    </linearGradient>
+    <linearGradient id="lightBlueGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2193b0" />
+      <stop offset="100%" stop-color="#6dd5ed" />
+    </linearGradient>
+    <linearGradient id="yellowGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F7971E" />
+      <stop offset="100%" stop-color="#FFD200" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Main Background -->
+  <rect width="100%" height="100%" fill="url(#backgroundGradient)" rx="10" ry="10" />
+  
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial, sans-serif" font-size="24" font-weight="bold" text-anchor="middle" fill="#2c3e50">GridShapeAI Use Cases</text>
+  
+  <!-- Central System Icon -->
+  <circle cx="400" cy="200" r="60" fill="#fff" filter="url(#shadow)" />
+  <circle cx="400" cy="200" r="50" fill="url(#lightBlueGradient)" />
+  <text x="400" y="190" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Grid</text>
+  <text x="400" y="210" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">Shape</text>
+  <text x="400" y="230" font-family="Arial, sans-serif" font-size="18" font-weight="bold" text-anchor="middle" fill="white">AI</text>
+  
+  <!-- Grid Pattern Around Icon -->
+  <g stroke="#ddd" stroke-width="0.5" opacity="0.7">
+    <!-- Horizontal Lines -->
+    <line x1="320" y1="170" x2="480" y2="170" />
+    <line x1="320" y1="200" x2="480" y2="200" />
+    <line x1="320" y1="230" x2="480" y2="230" />
+    
+    <!-- Vertical Lines -->
+    <line x1="370" y1="150" x2="370" y2="250" />
+    <line x1="400" y1="150" x2="400" y2="250" />
+    <line x1="430" y1="150" x2="430" y2="250" />
+  </g>
+  
+  <!-- Use Case: CAD/CAM -->
+  <g transform="translate(100, 80)">
+    <rect x="0" y="0" width="140" height="100" rx="10" ry="10" fill="url(#cadGradient)" filter="url(#shadow)" />
+    <text x="70" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">CAD/CAM</text>
+    
+    <!-- CAD Illustration -->
+    <g transform="translate(30, 45)">
+      <!-- CAD Drawing -->
+      <rect x="0" y="0" width="80" height="40" fill="#fff" stroke="#333" stroke-width="1" />
+      
+      <!-- Shape on Drawing -->
+      <rect x="15" y="10" width="30" height="20" fill="none" stroke="#333" stroke-width="1" />
+      <circle cx="60" cy="20" r="10" fill="none" stroke="#333" stroke-width="1" />
+      
+      <!-- Dimension Lines -->
+      <line x1="15" y1="5" x2="45" y2="5" stroke="#333" stroke-width="0.5" />
+      <line x1="15" y1="5" x2="15" y2="8" stroke="#333" stroke-width="0.5" />
+      <line x1="45" y1="5" x2="45" y2="8" stroke="#333" stroke-width="0.5" />
+      <text x="30" y="4" font-family="Arial, sans-serif" font-size="5" text-anchor="middle" fill="#333">30</text>
+    </g>
+  </g>
+  
+  <!-- Connection to CAD/CAM -->
+  <path d="M240 130 L340 170" stroke="#2c3e50" stroke-width="2" fill="none" />
+  <circle cx="340" cy="170" r="3" fill="#2c3e50" />
+  
+  <!-- Use Case: Architecture -->
+  <g transform="translate(100, 220)">
+    <rect x="0" y="0" width="140" height="100" rx="10" ry="10" fill="url(#architectureGradient)" filter="url(#shadow)" />
+    <text x="70" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Architecture</text>
+    
+    <!-- Building Illustration -->
+    <g transform="translate(20, 40)">
+      <!-- Building Base -->
+      <rect x="0" y="20" width="100" height="40" fill="#e0e0e0" stroke="#333" stroke-width="1" />
+      
+      <!-- Building Top -->
+      <polygon points="0,20 50,0 100,20" fill="#ccc" stroke="#333" stroke-width="1" />
+      
+      <!-- Windows -->
+      <rect x="20" y="30" width="15" height="15" fill="#fff" stroke="#333" stroke-width="0.5" />
+      <rect x="45" y="30" width="15" height="15" fill="#fff" stroke="#333" stroke-width="0.5" />
+      <rect x="70" y="30" width="15" height="15" fill="#fff" stroke="#333" stroke-width="0.5" />
+      
+      <!-- Door -->
+      <rect x="45" y="45" width="15" height="15" fill="#fff" stroke="#333" stroke-width="0.5" />
+    </g>
+  </g>
+  
+  <!-- Connection to Architecture -->
+  <path d="M240 270 L340 230" stroke="#2c3e50" stroke-width="2" fill="none" />
+  <circle cx="340" cy="230" r="3" fill="#2c3e50" />
+  
+  <!-- Use Case: Education -->
+  <g transform="translate(560, 80)">
+    <rect x="0" y="0" width="140" height="100" rx="10" ry="10" fill="url(#educationGradient)" filter="url(#shadow)" />
+    <text x="70" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Education</text>
+    
+    <!-- Education Illustration -->
+    <g transform="translate(35, 45)">
+      <!-- Book -->
+      <rect x="0" y="0" width="70" height="40" rx="2" ry="2" fill="#fff" stroke="#333" stroke-width="1" />
+      <path d="M35 0 L35 40" stroke="#333" stroke-width="1" fill="none" />
+      
+      <!-- Geometric Shapes -->
+      <circle cx="17" cy="20" r="10" fill="none" stroke="#ff5e62" stroke-width="1.5" />
+      <rect x="45" y="10" width="15" height="15" fill="none" stroke="#3a7bd5" stroke-width="1.5" />
+      <polygon points="53,35 60,25 45,25" fill="none" stroke="#56ab2f" stroke-width="1.5" />
+    </g>
+  </g>
+  
+  <!-- Connection to Education -->
+  <path d="M560 130 L460 170" stroke="#2c3e50" stroke-width="2" fill="none" />
+  <circle cx="460" cy="170" r="3" fill="#2c3e50" />
+  
+  <!-- Use Case: 3D Printing -->
+  <g transform="translate(560, 220)">
+    <rect x="0" y="0" width="140" height="100" rx="10" ry="10" fill="url(#printingGradient)" filter="url(#shadow)" />
+    <text x="70" y="30" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">3D Printing</text>
+    
+    <!-- 3D Printer Illustration -->
+    <g transform="translate(30, 40)">
+      <!-- Printer Frame -->
+      <rect x="0" y="0" width="80" height="50" fill="none" stroke="#333" stroke-width="1.5" />
+      
+      <!-- Printer Head -->
+      <rect x="30" y="10" width="20" height="10" fill="#ccc" stroke="#333" stroke-width="1" />
+      
+      <!-- Print Bed -->
+      <rect x="10" y="40" width="60" height="5" fill="#ccc" stroke="#333" stroke-width="1" />
+      
+      <!-- Printing Object (cube) -->
+      <rect x="35" y="30" width="10" height="10" fill="#56ab2f" />
+      
+      <!-- Filament -->
+      <line x1="40" y1="0" x2="40" y2="10" stroke="#56ab2f" stroke-width="2" />
+    </g>
+  </g>
+  
+  <!-- Connection to 3D Printing -->
+  <path d="M560 270 L460 230" stroke="#2c3e50" stroke-width="2" fill="none" />
+  <circle cx="460" cy="230" r="3" fill="#2c3e50" />
+  
+  <!-- Use Case: Pattern Design -->
+  <g transform="translate(100, 350)">
+    <rect x="0" y="0" width="140" height="40" rx="10" ry="10" fill="url(#yellowGradient)" filter="url(#shadow)" />
+    <text x="70" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Pattern Design</text>
+  </g>
+  
+  <!-- Connection to Pattern Design -->
+  <path d="M210 350 L340 260" stroke="#2c3e50" stroke-width="2" fill="none" />
+  <circle cx="340" cy="260" r="3" fill="#2c3e50" />
+  
+  <!-- Use Case: Engineering -->
+  <g transform="translate(330, 350)">
+    <rect x="0" y="0" width="140" height="40" rx="10" ry="10" fill="url(#lightBlueGradient)" filter="url(#shadow)" />
+    <text x="70" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Engineering</text>
+  </g>
+  
+  <!-- Connection to Engineering -->
+  <path d="M400 300 L400 350" stroke="#2c3e50" stroke-width="2" fill="none" />
+  <circle cx="400" cy="300" r="3" fill="#2c3e50" />
+  
+  <!-- Use Case: Data Visualization -->
+  <g transform="translate(560, 350)">
+    <rect x="0" y="0" width="140" height="40" rx="10" ry="10" fill="url(#cadGradient)" filter="url(#shadow)" />
+    <text x="70" y="25" font-family="Arial, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="white">Data Visualization</text>
+  </g>
+  
+  <!-- Connection to Data Visualization -->
+  <path d="M590 350 L460 260" stroke="#2c3e50" stroke-width="2" fill="none" />
+  <circle cx="460" cy="260" r="3" fill="#2c3e50" />
+  
+  <!-- Animation Elements -->
+  <g>
+    <!-- Spinning Center -->
+    <circle cx="400" cy="200" r="48" fill="none" stroke="#fff" stroke-width="2" stroke-dasharray="5,5" opacity="0.5">
+      <animateTransform attributeName="transform" type="rotate" from="0 400 200" to="360 400 200" dur="20s" repeatCount="indefinite" />
+    </circle>
+    
+    <!-- Pulsing Connections -->
+    <circle cx="340" cy="170" r="0" fill="#2c3e50" opacity="0.7">
+      <animate attributeName="r" values="0;5;0" dur="3s" begin="0s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="340" cy="230" r="0" fill="#2c3e50" opacity="0.7">
+      <animate attributeName="r" values="0;5;0" dur="3s" begin="0.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="460" cy="170" r="0" fill="#2c3e50" opacity="0.7">
+      <animate attributeName="r" values="0;5;0" dur="3s" begin="1s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="460" cy="230" r="0" fill="#2c3e50" opacity="0.7">
+      <animate attributeName="r" values="0;5;0" dur="3s" begin="1.5s" repeatCount="indefinite" />
+    </circle>
+    <circle cx="400" cy="300" r="0" fill="#2c3e50" opacity="0.7">
+      <animate attributeName="r" values="0;5;0" dur="3s" begin="2s" repeatCount="indefinite" />
+    </circle>
+  </g>
+</svg>

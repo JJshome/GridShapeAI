@@ -1,0 +1,24 @@
+# Core Dependencies
+numpy==1.24.3
+torch==2.0.1
+matplotlib==3.7.1
+Pillow==9.5.0
+trimesh==3.22.0
+
+# For 3D Processing
+scikit-image==0.21.0
+open3d==0.17.0
+
+# For Neural Network Model
+transformers==4.30.0
+tokenizers==0.13.3
+nltk==3.8.1
+
+# For Web UI & Visualization
+flask==2.3.2
+flask-cors==3.0.10
+threejs==0.1.7
+
+# For Export Formats
+pyrender==0.1.45
+svgwrite==1.4.3
